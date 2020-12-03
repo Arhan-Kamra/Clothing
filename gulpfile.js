@@ -24,6 +24,8 @@ const runSequence = require('run-sequence');
 const autoPrefixer = require('gulp-autoprefixer');
 // Requires the gulp-plumber plugin
 const plumber = require('gulp-plumber');
+// Requires the gulp-sourcemaps plugin
+const sourcemaps = require('gulp-sourcemaps');
 
 // Gulp Syntax
 // gulp.task('task-name', function () {
@@ -46,10 +48,12 @@ gulp.task('sass', function () {
     gulp
       .src('resources/sass/*.scss')
       .pipe(plumber())
+      .pipe(sourcemaps.init())
       // Using gulp-sass
       // Converts Sass to CSS with gulp-sass
       .pipe(sass())
       .pipe(autoPrefixer())
+      .pipe(sourcemaps.write())
       .pipe(gulp.dest('resources/css/'))
       .pipe(
         browserSync.reload({
