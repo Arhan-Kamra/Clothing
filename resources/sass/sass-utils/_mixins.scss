@@ -1,1 +1,6 @@
 // mixins
+// A mixin for setting equal section heights for all 3 main sections with class 'clothing', 'offer__wheel' and 'exercise'
+@mixin section__dimensions {
+  height: $section__height;
+  width: $parent__width;
+}
