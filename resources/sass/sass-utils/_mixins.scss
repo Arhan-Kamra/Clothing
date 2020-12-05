@@ -1,1 +1,25 @@
 // mixins
+// A mixin for setting equal section heights for all 3 main sections with class 'clothing', 'offer__wheel' and 'exercise'
+@mixin section__dimensions {
+  height: $section__height;
+  width: $parent__width;
+}
+
+$break: (
+  small: 320px,
+  medium: 576px,
+  large: 992px,
+  extra: 1199px,
+);
+
+@mixin respond($breakpoint) {
+  @if map-has-key($break, $breakpoint) {
+    $value: map-get($break, $breakpoint);
+
+    @media screen and (min-width: $value) {
+      @content;
+    }
+  }
+
+  @warn "There is no such '$breakpoint'";
+}

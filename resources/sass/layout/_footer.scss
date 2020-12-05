@@ -1,0 +1,47 @@
+// Give some margin to the footer section
+.footer {
+  // fix image width
+  &__image {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 400px;
+
+    @media screen and (max-width: 768px) {
+      height: 400px;
+    }
+  }
+
+  // Position overlay container on the top of the image on the right side
+  .overlay__container {
+    top: 0;
+    right: 0;
+
+    width: 60%;
+    height: 100%;
+
+    opacity: 0.5;
+    background-color: orangered;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      clip-path: none;
+    }
+  }
+
+  // Position image text on the top of the image on the right side
+  .image__overlay {
+    height: 100%;
+
+    // Set max height of content text a bit
+    &--content {
+      opacity: 1;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
