@@ -1,0 +1,40 @@
+.accessories {
+  height: $accessories__section--width;
+
+  @media screen and (max-width: 992px) {
+    height: 600px;
+  }
+
+  &__information {
+    width: 25%;
+
+    @media screen and (max-width: 1199px) {
+      width: 40%;
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 90%;
+    }
+
+    &--title {
+    }
+
+    &--text {
+    }
+  }
+
+  &__image {
+    border-radius: 50%;
+    box-shadow: -110px 3px 90px -29px rgba(0, 0, 0, 0.48);
+
+    @media screen and (max-width: 992px) {
+      width: 200px;
+      height: 200px;
+      box-shadow: none;
+    }
+  }
+}

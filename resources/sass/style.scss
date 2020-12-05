@@ -3,7 +3,10 @@
 @import "base/typography", "sass-utils/variables", "sass-utils/mixins",
   "../../vendors/js-css__libraries/bourbon/core/bourbon",
   "../../vendors/js-css__libraries/breakpoint-sass/stylesheets/breakpoint";
+// Import all partials form pages directory
+@import "pages/home";
 // Import all partials from layout directory
-@import "layout/clothing", "layout/exercise", "layout/offer__wheel";
+@import "layout/clothing", "layout/exercise", "layout/offer__wheel",
+  "layout/categories", "layout/footer", "layout/accessories";
 // Import all partials from components directory
 @import "components/search";

@@ -56,41 +56,54 @@
     <!-- endbuild -->
   </head>
 
-  <body>
+  <body class="p-3">
     <!-- Add your site or application content here -->
     <!-- HTML wrapper starts here -->
     <div class="wrapper">
       <!-- Bootstrap main container starts here -->
       <div class="container-fluid">
-        <!-- Bootstrap container starts here -->
-        <div class="container">
-          <!-- Navbar starts here -->
-          <section class="row navigation">
-            <nav class="w-100 navbar navbar-expand-md navbar-dark bg-dark">
-              <!-- Navbar brand -->
-              <a href="#" class="navbar-brand">
-                <img
-                  width="50"
-                  height="50"
-                  src="./resources/html__images/specific-category__images/ArmCare2go__logo.jpg"
-                  alt="A logo of the company 'ArmCare2go'"
-                />
-              </a>
-              <span
-                class="navbar-text d-flex flex-column align-items-center justify-content-center"
+        <!-- Navbar starts here -->
+        <section class="navigation">
+          <nav class="w-100 navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Navbar brand -->
+            <a href="#" class="navbar-brand">
+              <img
+                width="50"
+                height="50"
+                src="./resources/html__images/specific-category__images/ArmCare2go__logo.jpg"
+                alt="A logo of the company 'ArmCare2go'"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <span
+              class="navbar-text d-flex flex-column align-items-center justify-content-center"
+            >
+              <span class="h3 font-weight-bold text-white"
+                >ArmCare<span class="text-warning">2</span>Go</span
               >
-                <span class="h3 font-weight-bold"
-                  >ArmCare<span class="text-warning">2</span>Go</span
-                >
-                <span class="text-muted small">ArmCare2Go.com</span>
-              </span>
+              <span class="text-muted small">ArmCare2Go.com</span>
+            </span>
+            <div
+              class="collapse navbar-collapse text-center"
+              id="navbarSupportedContent"
+            >
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                   <a
                     data-toggle="dropdown"
                     aria-expanded="false"
                     aria-haspopup="false"
-                    class="nav-link dropdown-toggle"
+                    class="nav-link text-white dropdown-toggle"
                     href="#"
                     id="dropdown__menu--button"
                     >Categories</a
@@ -110,32 +123,148 @@
                   <div class="form-inline">
                     <input
                       class="form-control search__box"
-                      type="text"
+                      type="search"
                       placeholder="Search"
                     />
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Instructions</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link text-white" href="#">Instructions</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
+                  <a class="nav-link text-white" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#"
                     ><i class="fa fa-pencil-square-o" aria-hidden="true"></i
                   ></a>
                 </li>
               </ul>
-            </nav>
-          </section>
-          <!-- Navbar ends here -->
-          <!-- First row starts here -->
-          <section class="w-100 row bg-light clothing">clothing</section>
-          <!-- First row ends here -->
-        </div>
-        <!-- Bootstrap container ends here -->
+            </div>
+          </nav>
+        </section>
+        <!-- Navbar ends here -->
+        <!-- First row starts here -->
+        <section
+          class="mt-4 categories d-flex justify-content-center align-items-center align-content-around flex-wrap"
+        >
+          <div class="font-weight-bold">
+            <a class="text-dark" href="#">Shoulder</a>
+          </div>
+          <div class="ml-lg-4 ml-md-4 ml-3 font-weight-bold">
+            <a class="text-dark" href="#">Elbow</a>
+          </div>
+          <div class="ml-lg-4 ml-md-4 ml-3 font-weight-bold">
+            <a class="text-dark" href="#">Forearm</a>
+          </div>
+          <div class="ml-lg-4 ml-md-4 ml-3 font-weight-bold">
+            <a class="text-dark" href="#">Wrist</a>
+          </div>
+          <div class="ml-lg-4 ml-md-4 ml-3 font-weight-bold">
+            <a class="text-dark" href="#">Finger</a>
+          </div>
+          <div class="ml-lg-4 ml-md-4 ml-3 font-weight-bold">
+            <a class="text-dark" href="#">Hand</a>
+          </div>
+          <div class="ml-lg-4 ml-md-4 ml-3 font-weight-bold">
+            <a class="text-dark" href="#">Sports</a>
+          </div>
+        </section>
+        <!-- First row ends here -->
+        <!-- Accessories row starts here -->
+        <section
+          class="mt-4 d-flex flex-column flex-lg-row justify-content-around align-items-center accessories bg-light"
+        >
+          <div class="accessories__information">
+            <h2 class="accessories__information--title">Buy the accessories</h2>
+            <p class="accessories__information--text">
+              We have some very quality accessories suited for the gym freaks
+              out there which you can buy right from your mobile app and we can
+              even ship your item right to your gym door while you are there so
+              that the other knows that you care
+            </p>
+            <button class="btn btn-warning text-capitalize">shop now</button>
+          </div>
+          <img
+            class="mt-lg-0 accessories__image"
+            width="250px"
+            height="250px"
+            src="./resources/html__images/specific-category__images/ArmCare2go__accessories.jpg"
+            alt="An image of the accessories that ArmCare2go offers you"
+          />
+        </section>
+        <!-- Accessories row ends here -->
+        <!-- Second row starts here -->
+        <section
+          class="mt-4 offer__wheel d-flex flex-column flex-md-row justify-content-between justify-content-md-around align-items-center align-content-around"
+        >
+          <img
+            class="mr-5 mr-md-0 offer__wheel--image shadow"
+            src="./resources/html__images/offer-wheel-images/offer__wheel2.jpg"
+            alt="offer wheel image"
+            usemap="#wheel"
+          />
+
+          <map name="wheel">
+            <area
+              shape="circle"
+              coords="100,100,100"
+              alt="Computer"
+              href="https://www.google.com"
+            />
+            <area
+              shape="rect"
+              coords="290,172,333,250"
+              alt="Phone"
+              href="phone.htm"
+            />
+            <area
+              shape="circle"
+              coords="337,300,44"
+              alt="Coffee"
+              href="coffee.htm"
+            />
+          </map>
+          <p class="mt-4 mt-lg-0 offer__wheel--text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            nihil dolor amet mollitia vel exercitationem minus itaque quod
+            architecto recusandae quisquam nesciunt porro commodi, labore culpa.
+            Magni, obcaecati tempora! Consequuntur tempore aliquid inventore ea,
+            ut nulla corporis incidunt excepturi a velit perferendis autem sit
+            hic, esse optio maiores voluptates molestiae?
+          </p>
+        </section>
+        <!-- Second row ends here -->
+        <!-- Footer section starts here -->
+        <footer class="mt-5 footer position-relative">
+          <img
+            class="footer__image"
+            src="./resources/html__images/specific-category__images/ArmCare2go__shoulder.jpg"
+            alt="An image for the footer of a man exercising his shoulders lying on the floor with ropes"
+          />
+          <div class="overlay__container position-absolute">
+            <div class="image__overlay row">
+              <div class="offset-md-5 col-md-7 image__overlay--content">
+                <h2 class="text-center text-md-right text-dark">
+                  ArmCare<span class="text-warning">2</span>Go
+                </h2>
+                <p class="text-white text-center">
+                  ArmCare2Go is a Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Esse omnis consectetur, necessitatibus
+                  repellat et delectus iure quidem, mollitia nemo, dignissimos a
+                  porro odio exercitationem quae rem distinctio fuga voluptas!
+                  Numquam, recusandae labore. Maxime, eum. Quod labore
+                  repellendus incidunt ducimus? Repellat! ArmCare2Go is one of
+                  the few companies who you can trust for quality
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer section ends here -->
       </div>
       <!-- Bootstrap main container ends here -->
     </div>

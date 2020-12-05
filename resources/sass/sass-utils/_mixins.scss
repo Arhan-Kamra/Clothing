@@ -4,3 +4,22 @@
   height: $section__height;
   width: $parent__width;
 }
+
+$break: (
+  small: 320px,
+  medium: 576px,
+  large: 992px,
+  extra: 1199px,
+);
+
+@mixin respond($breakpoint) {
+  @if map-has-key($break, $breakpoint) {
+    $value: map-get($break, $breakpoint);
+
+    @media screen and (min-width: $value) {
+      @content;
+    }
+  }
+
+  @warn "There is no such '$breakpoint'";
+}

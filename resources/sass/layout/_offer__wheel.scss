@@ -1,4 +1,32 @@
 // styles for the second section 'offer__wheel'
 .offer__wheel {
-  @include section__dimensions;
+  height: 400px;
+  @media screen and (max-width: 576px) {
+    height: 600px;
+  }
+
+  // Fix image width
+  &--image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0px !important;
+    }
+  }
+
+  // Fix text container width
+  &--text {
+    width: 300px;
+    height: 300px;
+
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 98%;
+    }
+  }
 }
