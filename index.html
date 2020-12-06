@@ -53,6 +53,11 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="resources/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- endbuild -->
   </head>
 
@@ -149,7 +154,7 @@
         <!-- Navbar ends here -->
         <!-- First row starts here -->
         <section
-          class="mt-4 categories d-flex justify-content-center align-items-center align-content-around flex-wrap"
+          class="mt-4 categories d-flex justify-content-center align-items-center align-content-around flex-wrap animate__animated animate__fadeInUp"
         >
           <div class="font-weight-bold">
             <a class="text-dark" href="#">Shoulder</a>
@@ -178,7 +183,9 @@
         <section
           class="mt-4 d-flex flex-column flex-lg-row justify-content-around align-items-center accessories bg-light"
         >
-          <div class="accessories__information">
+          <div
+            class="accessories__information animate__animated animate__fadeInLeft"
+          >
             <h2 class="accessories__information--title">Buy the accessories</h2>
             <p class="accessories__information--text">
               We have some very quality accessories suited for the gym freaks
@@ -186,7 +193,11 @@
               even ship your item right to your gym door while you are there so
               that the other knows that you care
             </p>
-            <button class="btn btn-warning text-capitalize">shop now</button>
+            <button
+              class="btn btn-warning text-capitalize wow animate__animated animate__shakeX animate__fast animate__delay-1s"
+            >
+              shop now
+            </button>
           </div>
           <img
             class="mt-lg-0 accessories__image"
@@ -228,7 +239,9 @@
               href="coffee.htm"
             />
           </map>
-          <p class="mt-4 mt-lg-0 offer__wheel--text">
+          <p
+            class="mt-4 mt-lg-0 offer__wheel--text wow animate__animated animate__fadeInRight"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
             nihil dolor amet mollitia vel exercitationem minus itaque quod
             architecto recusandae quisquam nesciunt porro commodi, labore culpa.
@@ -239,7 +252,9 @@
         </section>
         <!-- Second row ends here -->
         <!-- Footer section starts here -->
-        <footer class="mt-5 footer position-relative">
+        <footer
+          class="mt-5 footer position-relative wow animate__animated animate__bounceInUp"
+        >
           <img
             class="footer__image"
             src="./resources/html__images/specific-category__images/ArmCare2go__shoulder.jpg"
@@ -282,6 +297,15 @@
       integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+      integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // eslint-disable-next-line no-undef
+      new WOW().init();
+    </script>
 
     <script src="resources/js/index.js"></script>
     <!-- end build -->
